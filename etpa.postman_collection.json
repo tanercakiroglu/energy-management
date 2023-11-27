@@ -1,0 +1,293 @@
+{
+	"info": {
+		"_postman_id": "815374d5-3bbb-41d6-a0c6-1acb0acba2ab",
+		"name": "etpa",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23343668"
+	},
+	"item": [
+		{
+			"name": "profile",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    {\r\n        \"profile\": \"B\",\r\n        \"values\": [\r\n            {\r\n                \"month\": \"MAY\",\r\n                \"ratio\": 0.1\r\n            },\r\n              {\r\n                \"month\": \"FEB\",\r\n                \"ratio\": 0.2\r\n            },\r\n            {\r\n                \"month\": \"SEP\",\r\n                \"ratio\": 0.1\r\n            },\r\n            {\r\n                \"month\": \"JAN\",\r\n                \"ratio\": 0.2\r\n            },\r\n            {\r\n                \"month\": \"MAR\",\r\n                \"ratio\": 0.2\r\n            },\r\n            {\r\n                \"month\": \"APR\",\r\n                \"ratio\": 0.2\r\n            },\r\n            {\r\n                \"month\": \"JUN\",\r\n                \"ratio\": 0.0\r\n            },\r\n            {\r\n                \"month\": \"JUL\",\r\n                \"ratio\": 0.0\r\n            },\r\n            {\r\n                \"month\": \"AUG\",\r\n                \"ratio\": 0.0\r\n            },\r\n            {\r\n                \"month\": \"OCT\",\r\n                \"ratio\": 0.0\r\n            },\r\n            {\r\n                \"month\": \"NOV\",\r\n                \"ratio\": 0.0\r\n            },\r\n            {\r\n                \"month\": \"DEC\",\r\n                \"ratio\": 0.0\r\n            }\r\n        ]\r\n    },\r\n    {\r\n        \"profile\": \"A\",\r\n        \"values\": [\r\n            {\r\n                \"month\": \"JAN\",\r\n                \"ratio\": 0.15\r\n            },\r\n            {\r\n                \"month\": \"FEB\",\r\n                \"ratio\": 0.2\r\n            },\r\n            {\r\n                \"month\": \"MAR\",\r\n                \"ratio\": 0.2\r\n            },\r\n            {\r\n                \"month\": \"APR\",\r\n                \"ratio\": 0.2\r\n            },\r\n            {\r\n                \"month\": \"MAY\",\r\n                \"ratio\": 0.0\r\n            },\r\n            {\r\n                \"month\": \"JUN\",\r\n                \"ratio\": 0.05\r\n            },\r\n            {\r\n                \"month\": \"JUL\",\r\n                \"ratio\": 0.2\r\n            },\r\n            {\r\n                \"month\": \"AUG\",\r\n                \"ratio\": 0.0\r\n            },\r\n            {\r\n                \"month\": \"SEP\",\r\n                \"ratio\": 0.0\r\n            },\r\n            {\r\n                \"month\": \"OCT\",\r\n                \"ratio\": 0.0\r\n            },\r\n            {\r\n                \"month\": \"NOV\",\r\n                \"ratio\": 0.0\r\n            },\r\n            {\r\n                \"month\": \"DEC\",\r\n                \"ratio\": 0.0\r\n            }\r\n        ]\r\n    }\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/etpa/v1/profile/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"etpa",
+						"v1",
+						"profile",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "profile",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    {\r\n        \"id\": \"6561fcc15950a22cb76d178a\",\r\n        \"profile\": \"B\",\r\n        \"values\": [\r\n            {\r\n                \"month\": \"JAN\",\r\n                \"ratio\": 0.1\r\n            },\r\n            {\r\n                \"month\": \"FEB\",\r\n                \"ratio\": 0.3\r\n            },\r\n            {\r\n                \"month\": \"MAR\",\r\n                \"ratio\": 0.2\r\n            },\r\n            {\r\n                \"month\": \"APR\",\r\n                \"ratio\": 0.2\r\n            },\r\n            {\r\n                \"month\": \"MAY\",\r\n                \"ratio\": 0.0\r\n            },\r\n            {\r\n                \"month\": \"JUN\",\r\n                \"ratio\": 0.0\r\n            },\r\n            {\r\n                \"month\": \"JUL\",\r\n                \"ratio\": 0.2\r\n            },\r\n            {\r\n                \"month\": \"AUG\",\r\n                \"ratio\": 0.0\r\n            },\r\n            {\r\n                \"month\": \"SEP\",\r\n                \"ratio\": 0.0\r\n            },\r\n            {\r\n                \"month\": \"OCT\",\r\n                \"ratio\": 0.0\r\n            },\r\n            {\r\n                \"month\": \"NOV\",\r\n                \"ratio\": 0.0\r\n            },\r\n            {\r\n                \"month\": \"DEC\",\r\n                \"ratio\": 0.0\r\n            }\r\n        ]\r\n    }\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/etpa/v1/profile/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"etpa",
+						"v1",
+						"profile",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "profile",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/etpa/v1/profile/6561fcc15950a22cb76d178a",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"etpa",
+						"v1",
+						"profile",
+						"6561fcc15950a22cb76d178a"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "profile by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/etpa/v1/profile/asds",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"etpa",
+						"v1",
+						"profile",
+						"asds"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "profile paginated",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/etpa/v1/profile/?limit=5&page=0",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"etpa",
+						"v1",
+						"profile",
+						""
+					],
+					"query": [
+						{
+							"key": "limit",
+							"value": "5"
+						},
+						{
+							"key": "page",
+							"value": "0"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "meter by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/etpa/v1/meter/0005",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"etpa",
+						"v1",
+						"meter",
+						"0005"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "meter by id consumption",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/etpa/v1/meter/0005/consumption?month=0",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"etpa",
+						"v1",
+						"meter",
+						"0005",
+						"consumption"
+					],
+					"query": [
+						{
+							"key": "month",
+							"value": "0"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "meter paginated",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/etpa/v1/meter/?limit=5&page=0",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"etpa",
+						"v1",
+						"meter",
+						""
+					],
+					"query": [
+						{
+							"key": "limit",
+							"value": "5"
+						},
+						{
+							"key": "page",
+							"value": "0"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "meter",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    {\r\n        \"meterId\": \"00010\",\r\n        \"profile\": \"G\",\r\n        \"values\": [\r\n            {\r\n                \"month\": \"JAN\",\r\n                \"meter\": 1\r\n            },\r\n            {\r\n                \"month\": \"FEB\",\r\n                \"meter\": 2\r\n            },\r\n            {\r\n                \"month\": \"MAR\",\r\n                \"meter\": 3\r\n            },\r\n            {\r\n                \"month\": \"APR\",\r\n                \"meter\": 4\r\n            },\r\n            {\r\n                \"month\": \"MAY\",\r\n                \"meter\": 5\r\n            },\r\n            {\r\n                \"month\": \"JUN\",\r\n                \"meter\": 6\r\n            },\r\n            {\r\n                \"month\": \"JUL\",\r\n                \"meter\": 7\r\n            },\r\n            {\r\n                \"month\": \"AUG\",\r\n                \"meter\": 8\r\n            },\r\n            {\r\n                \"month\": \"SEP\",\r\n                \"meter\": 9\r\n            },\r\n            {\r\n                \"month\": \"OCT\",\r\n                \"meter\": 10\r\n            },\r\n            {\r\n                \"month\": \"NOV\",\r\n                \"meter\": 11\r\n            },\r\n            {\r\n                \"month\": \"DEC\",\r\n                \"meter\": 12\r\n            }\r\n        ]\r\n    },\r\n    {\r\n        \"meterId\": \"0005\",\r\n        \"profile\": \"C\",\r\n        \"values\": [\r\n            {\r\n                \"month\": \"JAN\",\r\n                \"meter\": 10\r\n            },\r\n            {\r\n                \"month\": \"FEB\",\r\n                \"meter\": 20\r\n            },\r\n            {\r\n                \"month\": \"MAR\",\r\n                \"meter\": 30\r\n            },\r\n            {\r\n                \"month\": \"APR\",\r\n                \"meter\": 40\r\n            },\r\n            {\r\n                \"month\": \"MAY\",\r\n                \"meter\": 44\r\n            },\r\n            {\r\n                \"month\": \"JUN\",\r\n                \"meter\": 50\r\n            },\r\n            {\r\n                \"month\": \"JUL\",\r\n                \"meter\": 55\r\n            },\r\n            {\r\n                \"month\": \"AUG\",\r\n                \"meter\": 57\r\n            },\r\n            {\r\n                \"month\": \"SEP\",\r\n                \"meter\": 60\r\n            },\r\n            {\r\n                \"month\": \"OCT\",\r\n                \"meter\": 70\r\n            },\r\n            {\r\n                \"month\": \"NOV\",\r\n                \"meter\": 80\r\n            },\r\n            {\r\n                \"month\": \"DEC\",\r\n                \"meter\": 90\r\n            }\r\n        ]\r\n    },\r\n    {\r\n        \"meterId\": \"0002\",\r\n        \"profile\": \"D\",\r\n        \"values\": [\r\n            {\r\n                \"month\": \"JAN\",\r\n                \"meter\": 2\r\n            },\r\n            {\r\n                \"month\": \"FEB\",\r\n                \"meter\": 3\r\n            },\r\n            {\r\n                \"month\": \"MAR\",\r\n                \"meter\": 1\r\n            },\r\n            {\r\n                \"month\": \"APR\",\r\n                \"meter\": 6\r\n            },\r\n            {\r\n                \"month\": \"MAY\",\r\n                \"meter\": 3\r\n            },\r\n            {\r\n                \"month\": \"JUN\",\r\n                \"meter\": 4\r\n            },\r\n            {\r\n                \"month\": \"JUL\",\r\n                \"meter\": 5\r\n            },\r\n            {\r\n                \"month\": \"AUG\",\r\n                \"meter\": 5\r\n            },\r\n            {\r\n                \"month\": \"SEP\",\r\n                \"meter\": 5\r\n            },\r\n            {\r\n                \"month\": \"OCT\",\r\n                \"meter\": 6\r\n            },\r\n            {\r\n                \"month\": \"NOV\",\r\n                \"meter\":8\r\n            },\r\n            {\r\n                \"month\": \"DEC\",\r\n                \"meter\": 9\r\n            }\r\n        ]\r\n    }\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/etpa/v1/meter/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"etpa",
+						"v1",
+						"meter",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "meter",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    {\r\n        \"meterId\": \"0001\",\r\n        \"profile\": \"C\",\r\n        \"values\": [\r\n            {\r\n                \"month\": \"JAN\",\r\n                \"meter\": 8\r\n            },\r\n            {\r\n                \"month\": \"FEB\",\r\n                \"meter\": 20\r\n            },\r\n            {\r\n                \"month\": \"MAR\",\r\n                \"meter\": 30\r\n            },\r\n            {\r\n                \"month\": \"APR\",\r\n                \"meter\": 40\r\n            },\r\n            {\r\n                \"month\": \"MAY\",\r\n                \"meter\": 44\r\n            },\r\n            {\r\n                \"month\": \"JUN\",\r\n                \"meter\": 50\r\n            },\r\n            {\r\n                \"month\": \"JUL\",\r\n                \"meter\": 55\r\n            },\r\n            {\r\n                \"month\": \"AUG\",\r\n                \"meter\": 57\r\n            },\r\n            {\r\n                \"month\": \"SEP\",\r\n                \"meter\": 60\r\n            },\r\n            {\r\n                \"month\": \"OCT\",\r\n                \"meter\": 70\r\n            },\r\n            {\r\n                \"month\": \"NOV\",\r\n                \"meter\": 80\r\n            },\r\n            {\r\n                \"month\": \"DEC\",\r\n                \"meter\": 90\r\n            }\r\n        ]\r\n    },\r\n    {\r\n        \"meterId\": \"0001\",\r\n        \"profile\": \"C\",\r\n        \"values\": [\r\n            {\r\n                \"month\": \"JAN\",\r\n                \"meter\": 10\r\n            },\r\n            {\r\n                \"month\": \"FEB\",\r\n                \"meter\": 20\r\n            },\r\n            {\r\n                \"month\": \"MAR\",\r\n                \"meter\": 30\r\n            },\r\n            {\r\n                \"month\": \"APR\",\r\n                \"meter\": 40\r\n            },\r\n            {\r\n                \"month\": \"MAY\",\r\n                \"meter\": 44\r\n            },\r\n            {\r\n                \"month\": \"JUN\",\r\n                \"meter\": 50\r\n            },\r\n            {\r\n                \"month\": \"JUL\",\r\n                \"meter\": 55\r\n            },\r\n            {\r\n                \"month\": \"AUG\",\r\n                \"meter\": 57\r\n            },\r\n            {\r\n                \"month\": \"SEP\",\r\n                \"meter\": 60\r\n            },\r\n            {\r\n                \"month\": \"OCT\",\r\n                \"meter\": 70\r\n            },\r\n            {\r\n                \"month\": \"NOV\",\r\n                \"meter\": 80\r\n            },\r\n            {\r\n                \"month\": \"DEC\",\r\n                \"meter\": 90\r\n            }\r\n        ]\r\n    },\r\n    {\r\n        \"meterId\": \"0002\",\r\n        \"profile\": \"D\",\r\n        \"values\": [\r\n            {\r\n                \"month\": \"JAN\",\r\n                \"meter\": 2\r\n            },\r\n            {\r\n                \"month\": \"FEB\",\r\n                \"meter\": 3\r\n            },\r\n            {\r\n                \"month\": \"MAR\",\r\n                \"meter\": 1\r\n            },\r\n            {\r\n                \"month\": \"APR\",\r\n                \"meter\": 6\r\n            },\r\n            {\r\n                \"month\": \"MAY\",\r\n                \"meter\": 3\r\n            },\r\n            {\r\n                \"month\": \"JUN\",\r\n                \"meter\": 4\r\n            },\r\n            {\r\n                \"month\": \"JUL\",\r\n                \"meter\": 5\r\n            },\r\n            {\r\n                \"month\": \"AUG\",\r\n                \"meter\": 5\r\n            },\r\n            {\r\n                \"month\": \"SEP\",\r\n                \"meter\": 5\r\n            },\r\n            {\r\n                \"month\": \"OCT\",\r\n                \"meter\": 6\r\n            },\r\n            {\r\n                \"month\": \"NOV\",\r\n                \"meter\":8\r\n            },\r\n            {\r\n                \"month\": \"DEC\",\r\n                \"meter\": 9\r\n            }\r\n        ]\r\n    }\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/etpa/v1/meter/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"etpa",
+						"v1",
+						"meter",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

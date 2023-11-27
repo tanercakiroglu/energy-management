@@ -92,7 +92,7 @@ public class ProfileServiceImpl implements ProfileService {
 
     List<Profile> toBeUpdated = profileRepository.findAllById(map.keySet())
         .parallelStream()
-        .map(map::get)
+        .map(profile->map.get(profile.getId()))
         .map(profileMapper::mapPatchDtoToEntity)
         .toList();
 
